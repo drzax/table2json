@@ -29,7 +29,11 @@ Feel free to implement any of those and sumbmit a pull request—if it has test 
 
 ## Release History
 
-### 0.1.1
+### 0.2.1
+- Correct version number mismatches
+- Add node v0.8 to test matrix
+
+### 0.2.0
 - Add support for AMD
 - Add support for global definition of module (i.e. make it available as `window.table2json` in the browser)
 - Add unit tests

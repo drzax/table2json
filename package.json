@@ -1,7 +1,7 @@
 {
   "name": "table2json",
   "description": "Convert an HTML table node to a javascript object.",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "homepage": "https://github.com/drzax/table2json",
   "author": {
     "name": "Simon Elvery",
