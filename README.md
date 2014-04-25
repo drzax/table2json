@@ -7,20 +7,21 @@ Install the module with: `npm install table2json`
 
 ```javascript
 var table2json = require('table2json');
-table2json.awesome(); // "awesome"
+table2json.parse(table);
 ```
 
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
+The `table` parameter is expected to be a HTML table node object.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
+## Browser support
+IE7 and all more modern browsers.
+
 ## Release History
-_(Nothing yet)_
+
+### 0.1.0
+- Initial release
 
 ## License
 Copyright (c) 2014 Simon Elvery  
