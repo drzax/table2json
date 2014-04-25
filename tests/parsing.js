@@ -1,6 +1,6 @@
 /* jshint undef: false, unused: true */
 
-module("Basic Tests");
+module("Basic Parsing Tests");
 
 test('table-1', function(){
 	var table, result;

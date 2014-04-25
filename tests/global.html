@@ -1,17 +1,17 @@
 <!doctype html>
 <html>
   <head>
-      <meta charset='UTF-8' />
-      <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+      <meta charset="UTF-8" />
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
  
       <title>table2json QUnit Test Runner</title>
  
-      <link rel='stylesheet' href='../node_modules/qunitjs/qunit/qunit.css'>
+      <link rel="stylesheet" href="../node_modules/qunitjs/qunit/qunit.css">
  
   </head>
   <body>
-    <div id="qunit"></div> <!-- QUnit fills this with results, etc -->
-    <div id='qunit-fixture'>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">
 
       <!-- A basic test -->
       <table id="table-1">
@@ -28,15 +28,63 @@
           <td>four</td>
         </tr>
       </table>
+
+      <table id="vertical">
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+      </table>
+      
+      <table id="horizontal">
+        <tr>
+          <th>Row 1</th>
+          <td>Column 2</td>
+        </tr>
+        <tr>
+          <th>Row 2</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>Row 3</th>
+          <td>four</td>
+        </tr>
+      </table>
+
+      <table id="mixed-orientation">
+        <tr>
+          <th>Row 1</th>
+          <th>Column 2</th>
+        </tr>
+        <tr>
+          <th>Row 2</th>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>Row 3</th>
+          <td>four</td>
+        </tr>
+      </table>
+
     </div>
 
-    <script src='../lib/table2json.js'></script>
-    <!-- add any JS files under test (or put them in different .html files) -->
+    <script src="../lib/table2json.js"></script>
 
-    <script src='../node_modules/qunitjs/qunit/qunit.js'></script>
+    <script src="../node_modules/qunitjs/qunit/qunit.js"></script>
 
-    <!-- your tests, any and all to run with the given fixtures below -->
-    <script src='tests.js'></script>    
+    <!-- Private function tests -->
+    <script src="private.js"></script>
+
+    <!-- The actual parsing of tables -->
+    <script src="parsing.js"></script>
 
   </body>
 </html>
