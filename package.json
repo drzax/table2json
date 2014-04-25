@@ -1,7 +1,7 @@
 {
   "name": "table2json",
   "description": "Convert an HTML table node to a javascript object.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/drzax/table2json",
   "author": {
     "name": "Simon Elvery",
@@ -22,16 +22,25 @@
     }
   ],
   "main": "lib/table2json",
+  "scripts": {
+    "test": "grunt qunit"
+  },
   "engines": {
     "node": ">= 0.8.0"
-  },
-  "scripts": {
-    "test": "grunt nodeunit"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.2"
+    "grunt": "~0.4.2",
+    "grunt-contrib-qunit": "~0.4.0",
+    "qunit": "~0.6.2",
+    "qunitjs": "~1.14.0",
+    "requirejs": "~2.1.11"
   },
-  "keywords": []
+  "keywords": [
+    "data",
+    "table",
+    "json",
+    "convert"
+  ]
 }
