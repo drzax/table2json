@@ -1,4 +1,4 @@
-# table2json [![Build Status](https://secure.travis-ci.org/drzax/table2json.png?branch=master)](http://travis-ci.org/drzax/table2json)
+# table2json
 
 Convert an HTML table node to a javascript object.
 
