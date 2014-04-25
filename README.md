@@ -29,6 +29,9 @@ Feel free to implement any of those and sumbmit a pull request—if it has test 
 
 ## Release History
 
+### 0.2.2
+- Test runs require Node >=0.10.0
+
 ### 0.2.1
 - Correct version number mismatches
 - Add node v0.8 to test matrix
