@@ -9,7 +9,7 @@ test('table-1', function(){
 	result = window.table2json.parse(table);
 
 	// Array returned
-	strictEqual(Object.prototype.toString.call(result), '[object Array]', 'An array should be returned.');
+	ok(_.isArray(result), 'An array should be returned.');
 
 	// Object keys
 	ok(result[0].hasOwnProperty('Column 1'));
