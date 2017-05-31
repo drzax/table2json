@@ -23,7 +23,7 @@
   ],
   "main": "lib/table2json",
   "scripts": {
-    "test": "grunt qunit"
+    "test": "vows test/*-test.js --spec"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -36,7 +36,11 @@
     "qunit": "~0.6.2",
     "qunitjs": "~1.14.0",
     "requirejs": "~2.1.11",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "smash": "0.0.12",
+    "jsdom": "~0.10.5",
+    "assert": "~1.1.1",
+    "vows": "~0.7.0"
   },
   "keywords": [
     "data",
